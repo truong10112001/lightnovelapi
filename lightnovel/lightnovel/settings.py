@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-h8@_sljy@im--#_h32qgqlih^g@cnte11*+u+!zc3s+@un6lgh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['lightnovelapi.herokuapp.com']
 
 # Application definition
 
