@@ -1,1 +1,1 @@
-web:gunicorn lightnovel.wsgi
+web: gunicorn wsgi:lightnovel
