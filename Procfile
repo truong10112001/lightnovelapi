@@ -1,3 +1,3 @@
-web: gunicorn lightnovel.wsgi:application --log-file - --log-level debug
+web: gunicorn lightnovel.wsgi --log-file -
 python manage.py collectstatic --noinput
 manage.py migrate
