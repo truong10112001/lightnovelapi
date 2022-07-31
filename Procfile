@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn lightnovel.wsgi
+web: gunicorn lightnovel.wsgi
