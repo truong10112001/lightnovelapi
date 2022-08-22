@@ -38,6 +38,11 @@ class LightNovelViewSet(viewsets.ViewSet, generics.ListAPIView,
         ln = LightNovel.objects.filter(illustrators__name__iexact=illustratorname)
         return Response(LightNovelSerializer(ln, many=True).data, status=status.HTTP_200_OK)
 
+    @action(methods=['get'], detail=False, url_path=r'get-by-publisher/(?P<publisher_name>\w[\w ]*\w)',
+            url_name="get-by-publisher")
+    def get_by_publisher(self, request, publisher_name):
+        ln = LightNovel.objects.filter(publishers__name__iexact=publisher_name)
+        return Response(LightNovelSerializer(ln, many=True).data, status=status.HTTP_200_OK)
 
 class AuthorViewSet(viewsets.ViewSet, generics.ListAPIView,
                     generics.RetrieveAPIView):
