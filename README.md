@@ -1,1 +1,1 @@
-# API light novel code cơ bản bằng python django, MongoDB
+API cơ bản bằng python django (rest_framework), MongoDB
