@@ -1,1 +1,1 @@
-API cơ bản bằng python django (rest_framework), MongoDB
+API cơ bản bằng python django (rest_framework, djongo), MongoDB
